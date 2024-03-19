@@ -1,0 +1,58 @@
+body {
+    background-image: radial-gradient(circle at 20% 20%, #6fd1ff 0%, #001022 100%);
+    background-attachment: fixed;
+}
+
+.spheader {
+    display: block;
+    position: relative;
+    width: 350px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.originblock {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 1000px;
+}
+
+.maing {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%);
+    width: 800px;
+    z-index: 2;
+}
+
+.secg {
+    display: block;
+    position: absolute;
+    top: 15%;
+    filter: blur(2px);
+    width: 200px;
+    z-index: 1;
+}
+.secg:hover {
+    animation: blur 0.5s ease-in-out;
+    filter: blur(0px);
+}
+.thirg {
+    display: block;
+    position: absolute;
+    filter: blur(2px);
+    width: 200px;
+    z-index: 1;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(2px);
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
